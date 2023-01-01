@@ -1,12 +1,12 @@
-- name: Android Recovery Action
-  uses: XenonTheInertG/android-recovery-action@main
+name: Android Recovery Action
+  uses: XenonTheInertG/android-recovery-action
   env:
     MANIFEST: "orangefox"
     DT_LINK: "https://github.com/starfoxdot64/android_device_motorola_denver"
     VENDOR: "motorola"
     CODENAME: "denver"
-    KERNEL_LINK: "Kernel repo link with optional -b branch. If not filled it would be detected as prebuilt"
-    TARGET: "Set as recoveryimage or bootimage if no recovery partition avaiable"
-    FLAVOR: "eng or userdebug"
-    EXTRA_CMD: "if you want to Execute any external Command Before building process starts"
+    KERNEL_LINK: ""
+    TARGET: "adbd bootimage"
+    FLAVOR: "userdebug"
+    EXTRA_CMD: ""
     TZ: "Americas/Los Angeles" # Set Time-Zone According To Your Region
