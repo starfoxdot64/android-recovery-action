@@ -1,12 +1,13 @@
 name: Android Recovery Action
-  uses: XenonTheInertG/android-recovery-action
-  env:
-    MANIFEST: "orangefox"
-    DT_LINK: "https://github.com/starfoxdot64/android_device_motorola_denver"
-    VENDOR: "motorola"
-    CODENAME: "denver"
-    KERNEL_LINK: ""
-    TARGET: "adbd bootimage"
-    FLAVOR: "userdebug"
-    EXTRA_CMD: ""
-    TZ: "Americas/Los Angeles" # Set Time-Zone According To Your Region
+runs-on: ubuntu-latest
+uses: XenonTheInertG/android-recovery-action
+ env:
+  - MANIFEST: "orangefox"
+  - DT_LINK: "https://github.com/starfoxdot64/android_device_motorola_denver"
+  - VENDOR: "motorola"
+  - CODENAME: "denver"
+  - KERNEL_LINK: ""
+  - TARGET: "adbd bootimage"
+  - FLAVOR: "userdebug"
+  - EXTRA_CMD: ""
+  - TZ: "Americas/Los Angeles" # Set Time-Zone According To Your Region
